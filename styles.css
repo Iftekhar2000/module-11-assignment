@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #ff5500;
+    --secondary-color: #17c932;
+    --heading-font-size: 36px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  h1 {
+    font-size: var(--heading-font-size);
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  a:active {
+    color: #ff0000;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border:  1px solid black;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  td {
+    background-color: #ffffff;
+    border:  1px solid black;
+  }
+  
+  .table-container::before {
+    content: "Table:";
+    font-weight: bold;
+  }
+  
+  .image-container::after {
+    content: "Image Description";
+    display: block;
+    font-style: italic;
+    width: max-content;
+  }
+  
